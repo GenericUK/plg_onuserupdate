@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="2.5" type="plugin" group="user" method="upgrade">
+	<name>On User Update</name>
+	<author>Generic</author>
+	<creationDate>April 2013</creationDate>
+	<copyright></copyright>
+	<license>GNU General Public License</license>
+	<authorEmail></authorEmail>
+	<authorUrl></authorUrl>
+	<version>2.5</version>
+	<description>Plugin will fire onUserBeforeSave and onUserAfterSave</description>
+	<files>
+		<filename plugin="onuserupdate">onuserupdate.php</filename>
+		<filename>index.html</filename>
+	</files>
+
+	<params>
+  		<param name="to" type="text" default="" size="40" label="Notification sent to (comma seperate multiple email addresses)" description="Notification sent to" />
+  		<param name="frommesg" type="text" default="" size="40" label="From Message (My Website)" description="From Message" />
+  		<param name="from" type="text" default="" size="40" label="From Email" description="From Email" />
+  		<param name="cc" type="text" default="" size="40" label="Copy To" description="Copy To" />
+   		<param name="bcc" type="text" default="" size="40" label="Blind Copy To" description="Blind Copy To" />
+	</params>
+
+	<config>
+  	  <fields name="params">
+		<fieldset name="basic">
+			<fields>
+  				<field name="to" type="text" default="" size="40" label="Notification To" description="Notification sent to (comma seperate multiple email addresses)" />
+  				<field name="frommesg" type="text" default="" size="40" label="From Message" description="From Message" />
+  	  			<field name="from" type="text" default="" size="40" label="From Email" description="From Email" />
+  	  			<field name="cc" type="text" default="" size="40" label="Copy To" description="Copy To" />
+  	  			<field name="bcc" type="text" default="" size="40" label="Blind Copy To" description="Blind Copy To" />
+			</fields>
+		</fieldset>
+	  </fields>
+	</config>
+
+</install>
